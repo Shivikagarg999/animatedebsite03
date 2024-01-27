@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "brasto";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+.main{
+    background-color: #111;
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    z-index: 9;
+    position: relative;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+.nav img{
+    height: 90px;
+}
+.nav h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    font-size: 30px;
+}
+.nav .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.page1>h1{
+    font-size: 7vw;
+    font-family: PP mori;
+    font-weight: 200;
+    margin-top: 10vw;
+    margin-left: 6vw;
+}
+.page1>h2{
+    font-size: 7vw;
+    font-family: PP mori;
+    font-weight: 200;
+    margin-left: 12vw;
+}
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page2{
+    min-height: 130vh;
+    padding: 5vw 0;
+    border-bottom: 2px solid #6c6c6c;
+    z-index: 9;
+    position: relative;
+}
+.page2cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    padding: 0 5vw;
+}
+.page2left{
+    width: 37%;
+}
+.page2left h2{
+    font-size: 2.3vw;
+    font-family: PP mori;
+    font-weight: 200;
+    font-size: 3vw;
+}
+.page2 h1{
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    font-family: PP mori;
+    font-weight: 200;
+}
+.page2right{
+    width: 40%;
+}
+.page2right p{
+    font-family: PP mori;
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+.page2right button{
+    width: 100%;
+    height: 2vw;
+    background-color: rgb(249, 124, 145);
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 3vw;
+}
+.page3{
+    height: 120vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding-top: 100px;
+    border-bottom: 2px solid #6c6c6c;
+}
+.page3>h1{
+    font-size: 7vw;
+    font-family: PP mori;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+.page3part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3part1 img{
+    margin-top: 150px;
+    height: 400px;
+}
+
+.page3part1 video{
+    height: 300px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    padding: 150px 100px;
+    z-index: 9;
+    position: relative;
+    color: #fff;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.elem img{
+    opacity: 0;
+    width: 340px;
+    transition: all ease 0.5s;
+    transform: translate(10%) rotate(3deg);
+}
+.elem:hover h1{
+   transform: translateY(-100%);
+   color:rgb(254, 161, 177);
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translate(0%) rotate(0deg);
+    position: absolute;
+}
+.elem h1{
+    font-size: 7.3vw;
+    font-family: PP mori;
+    font-weight: 300;
+    transition: all ease 0.5s;
+}
+.elem img:nth-child(1){
+    left: 0;
+}
+.elem img:nth-child(3){
+    right: 0;
+}
+.text-div{
+    height: 90px;
+    overflow: hidden;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    z-index: 9;
+    position: relative;
+    color: #fff;
+    padding: 60px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    font-family: PP mori;
+    font-weight: 200;
+    color: rgb(255, 188, 199);
+    margin-bottom: 30px;
+}
+.box{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.box h3,h4{
+    font-family: PP mori;
+    font-weight: 200;
+}
+.page5 .box{
+    border-bottom: 2px solid rgb(194, 190, 190);
+}
+#fbox{
+    border-top: 2px solid rgb(194, 190, 190) ;
+}
+.page6{
+    width: 100%;
+    height: 130vh;
+    background-color: #111;
+    color: #fff;
+    padding-top: 24vh;
+}
+.page6 h1{
+    text-align: center;
+    font-family: "PP mori";
+    font-size: 14vh;
+}
+.page6 p{
+    width: 440px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    margin-top: 7vh;
+}
+.page6 button{
+    width: 200px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: pink;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    margin-top: 38vh;
+}
