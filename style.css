@@ -24,6 +24,7 @@ html, body{
 .main{
     background-color: #111;
     cursor: none;
+    overflow: hidden;
 }
 .page1{
     min-height: 100vh;
@@ -253,7 +254,7 @@ html, body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    margin-top: 7vh;
+    margin-top: 11vh;
 }
 .page6 button{
     width: 200px;
